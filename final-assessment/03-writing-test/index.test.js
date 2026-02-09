@@ -1,15 +1,8 @@
-import { test } from "node:test";
-import assert from "node:assert";
-import { add } from "./calculator.mjs";
+import test from 'node:test';
+import assert from 'node:assert';
+import { sum } from './index.js';
 
-test("should add two numbers correctly", () => {
-  // Arrange
-  const a = 2;
-  const b = 3;
-
-  // Act
-  const result = add(a, b);
-
-  // Assert
-  assert.strictEqual(result, 5);
+test('menjumlahkan dua angka',() => {
+    const result = sum(2, 8);
+    assert.strictEqual(result, 10);
 });
